@@ -33,12 +33,12 @@ bash
 #              "3gpp_3D_UMA_NLOS_M_512_velo500*.mat". The files are renamed sequentially starting 
 #              from a specified number and are moved to a new directory called "changedfiles".
 # Usage: ./rename_and_move_files.sh
-# Author: Your Name
-# Date: YYYY-MM-DD
+# Author: chadalvada sivasanthosh
+# Date: 17-06-2024
 
 # Define SSH connection parameters
 remoteUser="admins"                              # Username for SSH connection
-remoteHost="10.171.9.236"                        # Hostname or IP address of the remote server
+remoteHost="10.171.xx.xxx"                        # Hostname or IP address of the remote server
 remoteFolderPath="/home/admins/CP-OFDM_OTFS_5G_turbo/sftp1/3GPPChannelModels"  # Path to the target directory on the remote server
 changedFilesFolderPath="${remoteFolderPath}/changedfiles"  # Path to the directory for renamed files
 
@@ -79,18 +79,15 @@ EOF
 echo "File renaming and moving completed."
 ```
 
-Save the Script:
-Save the script as rename_and_move_files.sh in the cloned repository directory.
+# Save the Script:
+Save the script as ```rename_and_move_files.sh ``` in the cloned repository directory.
 
-#Make the Script Executable:
+# Make the Script Executable:
 
 bash
-#Copy code
+# Copy code
 ```chmod +x rename_and_move_files.sh ```
-Execute the Script:
-
-bash
-### Copy code
+# Execute the Script:
 ```./rename_and_move_files.sh```
 # Notes
 Make sure to update the remoteUser, remoteHost, remoteFolderPath, and startRenameIndex variables in the script as per your requirements.
