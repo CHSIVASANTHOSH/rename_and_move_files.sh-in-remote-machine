@@ -21,9 +21,9 @@ The script connects to a remote server via SSH, renames files that match the pat
    git clone https://github.com/your-username/your-repository.git
    cd your-repository
 
-#Script Details
+### Script Details
 bash
-#Copy code
+### Copy code
 
 ```
 #!/bin/bash
@@ -90,9 +90,9 @@ bash
 Execute the Script:
 
 bash
-#Copy code
+### Copy code
 ```./rename_and_move_files.sh```
-#Notes
+# Notes
 Make sure to update the remoteUser, remoteHost, remoteFolderPath, and startRenameIndex variables in the script as per your requirements.
 The script uses SSH to connect to the remote server and perform file operations. Ensure that your SSH keys are properly configured to avoid password prompts.
 This script assumes that the files to be renamed are in the format 3gpp_3D_UMA_NLOS_M_512_velo500*.mat.
