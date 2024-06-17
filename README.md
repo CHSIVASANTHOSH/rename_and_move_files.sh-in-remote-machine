@@ -1,3 +1,41 @@
+# Rename and Move Files Script
+
+This repository contains a script for renaming and moving files on a remote server. The script is designed to rename all files in a specified directory that match a given pattern. The files are renamed sequentially starting from a specified number and are moved to a new directory.
+
+## Overview
+
+The script connects to a remote server via SSH, renames files that match the pattern `3gpp_3D_UMA_NLOS_M_512_velo500*.mat`, and moves them to a new directory named `changedfiles`. The renaming starts from a specified index and increments sequentially.
+
+## Usage
+
+### Prerequisites
+
+- Ensure you have SSH access to the remote server.
+- Make sure the necessary directories exist on the remote server or let the script create them.
+- Handle SSH key authentication to avoid password prompts during script execution.
+
+### Instructions
+
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/your-username/your-repository.git
+   cd your-repository
+Save the Script:
+Save the script as rename_and_move_files.sh in the cloned repository directory.
+
+Make the Script Executable:
+
+bash
+Copy code
+chmod +x rename_and_move_files.sh
+Execute the Script:
+
+bash
+Copy code
+./rename_and_move_files.sh
+Script Details
+bash
+Copy code
 #!/bin/bash
 
 # Script Name: rename_and_move_files.sh
@@ -49,4 +87,14 @@ EOF
 
 # Log completion message
 echo "File renaming and moving completed."
+Notes
+Make sure to update the remoteUser, remoteHost, remoteFolderPath, and startRenameIndex variables in the script as per your requirements.
+The script uses SSH to connect to the remote server and perform file operations. Ensure that your SSH keys are properly configured to avoid password prompts.
+This script assumes that the files to be renamed are in the format 3gpp_3D_UMA_NLOS_M_512_velo500*.mat.
+License
+Include your preferred license for the script, e.g., MIT License.
 
+vbnet
+Copy code
+
+This README.md file provides a comprehensive overview, usage instructions, and the script i
