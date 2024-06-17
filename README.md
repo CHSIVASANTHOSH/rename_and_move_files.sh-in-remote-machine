@@ -25,17 +25,19 @@ Save the script as rename_and_move_files.sh in the cloned repository directory.
 
 Make the Script Executable:
 
-```bash
+bash
 Copy code
-chmod +x rename_and_move_files.sh ```
+```chmod +x rename_and_move_files.sh ```
 Execute the Script:
 
 bash
 Copy code
-./rename_and_move_files.sh
+```./rename_and_move_files.sh```
 Script Details
 bash
 Copy code
+
+```
 #!/bin/bash
 
 # Script Name: rename_and_move_files.sh
@@ -87,6 +89,7 @@ EOF
 
 # Log completion message
 echo "File renaming and moving completed."
+```
 Notes
 Make sure to update the remoteUser, remoteHost, remoteFolderPath, and startRenameIndex variables in the script as per your requirements.
 The script uses SSH to connect to the remote server and perform file operations. Ensure that your SSH keys are properly configured to avoid password prompts.
