@@ -25,9 +25,9 @@ Save the script as rename_and_move_files.sh in the cloned repository directory.
 
 Make the Script Executable:
 
-bash
+```bash
 Copy code
-chmod +x rename_and_move_files.sh
+chmod +x rename_and_move_files.sh ```
 Execute the Script:
 
 bash
